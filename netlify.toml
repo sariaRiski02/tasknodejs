@@ -2,7 +2,3 @@
   command = "npm run build"
   publish = "public"  # Direktori publik situs web Anda
 
-[[redirects]]
-  from = "/*"  # Mengarahkan semua permintaan ke root situs web
-  to = "/:splat"
-  status = 200
