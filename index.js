@@ -11,5 +11,5 @@ function calculateArea(radius) {
   const queryObject = new URLSearchParams(window.location.search);
   const radius = queryObject.get('radius');
   const result = calculateArea(radius);
-  console.log(result);
+  document.getElementById("satu").innerHTML = result;
   
