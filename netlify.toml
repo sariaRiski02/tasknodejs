@@ -2,3 +2,5 @@
   command = "npm run build"
   publish = "public"  # Direktori publik situs web Anda
 
+[functions]
+  directory = "functions"
