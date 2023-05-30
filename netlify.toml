@@ -1,8 +1,8 @@
 [build]
-  command = "npm run build"  # Menggunakan perintah npm run build untuk mem-build fungsi Netlify
-  functions = "functions"  # Direktori fungsi Netlify
+  command = "npm run build"
+  publish = "public"  # Direktori publik situs web Anda
 
 [[redirects]]
-  from = "/api/*"  # Mengarahkan permintaan yang masuk di /api/* ke fungsi Netlify
-  to = "/.netlify/functions/:splat"
+  from = "/*"  # Mengarahkan semua permintaan ke root situs web
+  to = "/:splat"
   status = 200
