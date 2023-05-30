@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"  # Menggunakan perintah npm run build untuk mem-build fungsi Netlify
+  functions = "functions"  # Direktori fungsi Netlify
+
+[[redirects]]
+  from = "/api/*"  # Mengarahkan permintaan yang masuk di /api/* ke fungsi Netlify
+  to = "/.netlify/functions/:splat"
+  status = 200
